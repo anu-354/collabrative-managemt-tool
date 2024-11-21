@@ -13,7 +13,6 @@ import EmployeeDashboard from './Components/EmployeeDashboard';
 import CreateTask from './Components/CreateTask';
 import Progress from './Components/Progress';
 import FileModules from './Components/FileModules';
-import Deadlines from './Components/Deadlines';
 import Queries from './Components/Queries';
 
 const App = () => {
@@ -53,7 +52,7 @@ const App = () => {
                 <Route path="/create-task" element={<CreateTask />} />
                 <Route path="/progress" element={<Progress />} />
                 <Route path="/file-modules" element={<FileModules />} />
-                <Route path="/deadlines" element={<Deadlines />} />
+                
                 <Route path="/queries" element={<Queries />} />
                 {/* Specific route for employee task by moduleId */}
                 <Route path="/tasks/:moduleId" element={<Progress />} /> {/* Task-based Employee Interface */}
